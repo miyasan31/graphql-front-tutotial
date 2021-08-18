@@ -1,15 +1,46 @@
 {
-  "name": "graphql-turorial",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "11.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  }
+	"name": "graphql-turorial",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"api": "json-graphql-server src/db/db.js --p 4000",
+		"codegen": "graphql-codegen --config src/apollo/codegen.yml"
+	},
+	"dependencies": {
+		"@apollo/client": "^3.4.7",
+		"graphql": "^15.5.1",
+		"graphql-import": "^1.0.2",
+		"next": "11.1.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@graphql-codegen/cli": "2.0.1",
+		"@graphql-codegen/introspection": "2.0.0",
+		"@graphql-codegen/typescript": "2.0.0",
+		"@graphql-codegen/typescript-operations": "2.0.1",
+		"@graphql-codegen/typescript-react-apollo": "3.0.0",
+		"@types/node": "^16.6.1",
+		"@types/react": "^17.0.18",
+		"@typescript-eslint/eslint-plugin": "^4.29.1",
+		"@typescript-eslint/parser": "^4.29.1",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "^11.0.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-config-standard": "^16.0.3",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-import-access": "^1.0.0-beta",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-tailwindcss": "^1.14.1",
+		"json-graphql-server": "^2.2.3",
+		"typescript": "^4.3.5"
+	}
 }
